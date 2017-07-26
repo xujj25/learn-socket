@@ -15,7 +15,7 @@ int main () {
 	struct sockaddr_in serv_addr;
 	memset(&serv_addr, 0, sizeof(serv_addr));
 	serv_addr.sin_family =PF_INET;
-	serv_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+	serv_addr.sin_addr.s_addr = inet_addr("138.68.10.209");
 	serv_addr.sin_port = htons(1234);
 
 	// loop fetching user's input and send to server

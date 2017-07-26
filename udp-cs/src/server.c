@@ -27,6 +27,9 @@ int main()
 	char buffer[BUF_SIZE];
 	while (1) {
 		int strLen = recvfrom(sock, buffer, BUF_SIZE, 0, &clnt_addr, &nsize);
+
+		printf("recv data: %s\n", buffer);
+
 		sendto(sock, buffer, strLen, 0, &clnt_addr, nsize);
 	}
 
